@@ -4,19 +4,25 @@
 LIS 2360:  Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+July 31,2018
 
 ### Student Name:  
-(First and Last Name)
+Sohad Bargwi
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+This project gives an introducstion to the **AJAX** (Asynchronous JavaScript and XML) where it loading data in the background and display it on the webpage, without reloading the whole page. With the jQuery AJAX methods, you can request text, HTML, XML, or JSON from a remote server using both HTTP Get and HTTP Post - And you can load the external data directly into the selected HTML elements of your web page!
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+Github Page URL 
+
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+- Ajax allows data exchange with web server without reloading page
+- XMLHttpRequest object – Uses HTTP to exchange data between a client computer and a web server
+- Proxy is common technique for working around sameorigin policy with Ajax
+
+<br>
+<br>
+<br>
+
+![Image of Yaktocat](https://derivadow.files.wordpress.com/2007/01/ajax.png?w=506&h=309)

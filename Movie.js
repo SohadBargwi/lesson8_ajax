@@ -32,7 +32,7 @@ $(document).ready(function(){
 
             $.ajax({
                 //Insert YOUR API Key after the '=' inside the single quotes.
-                url:'https://api.themoviedb.org/3/search/movie?api_key=INSERT-HERE',
+                url:'https://api.themoviedb.org/3/search/movie?api_key=3b62b9f205d7e77eee28acec8437f082',
                 data: query
             })
             
@@ -57,7 +57,13 @@ $(document).ready(function(){
                  
                  *********************************Insert Code Below********************************************/                
                 
+            .done(function(json){
                 
+
+                //The following code retrieves the movie plot from JSON object retrieved from the TMDB Server
+                //and places the title on the HTML page, where the id="overview".
+                
+                $("#overview").html(json.results[0].overview);
                 
 
                 /***********************Retrieve Movie Release Date from Server & Add to HTML Document***********
@@ -72,7 +78,13 @@ $(document).ready(function(){
                  
                  *********************************Insert Code Below********************************************/               
 
+            .done(function(json){
+                
 
+                //The following code retrieves the movie release date from JSON object retrieved from the TMDB Server
+                //and places the title on the HTML page, where the id="release_date".
+                
+                $("#release_date").html(json.results[0].release_date);
 
 
                  /***********************Retrieve Movie Popularity Rate from Server & Add to HTML Document******
@@ -87,9 +99,15 @@ $(document).ready(function(){
                  
                  *********************************Insert Code Below********************************************/   
 
-  
-
+            .done(function(json){
                 
+
+                //The following code retrieves the movie popularity rate from JSON object retrieved from the TMDB Server
+                //and places the title on the HTML page, where the id="popularity".
+                
+                $("#popularity").html(json.results[0].popularity);
+
+
                  /*****************Retrieve Movie Original Language from Server & Add to HTML Document***********
                  TASK #9:  
                  1.  Include the jQuery code below that will retrieve the movie language from JSON object
@@ -102,6 +120,13 @@ $(document).ready(function(){
                  
                  *********************************Insert Code Below********************************************/                 
 
+            .done(function(json){
+                
+
+                //The following code retrieves the movie original language from JSON object retrieved from the TMDB Server
+                //and places the title on the HTML page, where the id="original_language".
+                
+                $("#original_language").html(json.results[0].original_language);
 
 
                 //The following code retrieves the movie poster path from the JSON object retrieved from the TMDB 
